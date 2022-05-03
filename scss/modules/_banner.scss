@@ -10,4 +10,12 @@
 .banner{
     width: 100%;
     z-index: -1;
+    position: absolute;
+    &-imagen{
+      margin-left: 65%;
+      margin-top: 10%;
+      max-width: 20%;
+      min-height: 20%;
+    }
 }
+
