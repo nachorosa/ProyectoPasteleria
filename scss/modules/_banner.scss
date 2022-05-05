@@ -1,56 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%22");
+
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Anton", sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
 }
 
-.banner{
+.banner {
     width: 100%;
     z-index: -1;
     position: absolute;
+
+    &-imagen {
+        margin-left: 15%;
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+        padding: 30% 0px;
+    }
+
+    &-texto {
+        & h2 {
+            font-size: 94px;
+            margin: 10% 20% 5% 20%;
+            text-align: left;
+        }
+
+        & p {
+            font-size: 20px;
+            padding: 0% 20%;
+            text-align: left;
+        }
+    }
 }
 
-.banner-imagen{
-    margin-left: 15%;
-    margin-top: 10%;
-    width: 80%;
-    height: 80%;
-    padding: 30% 0px;
+.titulos{
+    text-align: center;
 }
 
-.banner-texto{
-  & h2{
-    font-size: 94px;
-    margin: 10% 20% 5% 20%;
-    text-align: left;
-  }
-  & p{
-    font-size: 20px;
-    padding: 0% 20%;
-    text-align: left;
-  }
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & h3{
+        margin: 30px 0;
+    }
+    &-card{
+        max-width: 350px ;
+        min-height: 500px;
+        margin: 25px;
+        border: solid 3px grey;
+        border-radius: 5px;
+        padding: 25px;
+    }
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .banner-imagen {
+        width: 0%;
+        height: 0%;
+    }
 
-  .banner-imagen{
-    width: 0%;
-    height: 0%;
-}
+    .banner-texto {
+        & h2 {
+            font-size: 48px;
+            margin: 5% 10% 5px 40px;
+            text-align: left;
+        }
 
-.banner-texto{
-  & h2{
-    font-size: 48px;
-    margin: 5% 10% 5px 40px;
-    text-align: left;
-  }
-  & p{
-    font-size: 14px;
-    padding: 0% 10%;
-    text-align: left;
-  }
-}
+        & p {
+            font-size: 14px;
+            padding: 0% 10%;
+            text-align: left;
+        }
+    }
 }

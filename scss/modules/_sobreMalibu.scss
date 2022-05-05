@@ -1,0 +1,38 @@
+.malibu{
+    margin-bottom: 30%;
+}
+.sobreMalibu {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+
+    &-body{
+        margin-top: 10%;
+        padding: 25% 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    &-imagen {
+        width: 80%;
+        height: 80%;
+    }
+
+    &-texto {
+        border: solid 2px white;
+        background-color: rgba(80, 255, 255, 0.5);
+        height: 450px;
+        padding: 3%;
+        width: 40%;
+
+        & h2 {
+            font-size: 32px;
+            text-align: left;
+        }
+
+        & p {
+            font-size: 15px;
+            text-align: left;
+        }
+    }
+}
