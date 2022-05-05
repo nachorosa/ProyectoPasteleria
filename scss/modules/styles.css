@@ -8,29 +8,42 @@
 }
 
 .banner {
+  background-image: url("../../img/Group 128.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1100px;
   width: 100%;
-  z-index: -1;
-  position: absolute;
+}
+
+.banner-body {
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-imagen {
-  margin-left: 15%;
-  margin-top: 10%;
-  width: 80%;
-  height: 80%;
-  padding: 30% 0px;
+  margin: 0 auto;
 }
 
-.banner-texto h2 {
-  font-size: 94px;
-  margin: 10% 20% 5% 20%;
+.banner-imagen__img {
+  width: 500px;
+}
+
+.banner-texto {
   text-align: left;
-}
-
-.banner-texto p {
+  padding-left: 10%;
   font-size: 20px;
-  padding: 0% 20%;
-  text-align: left;
+}
+
+.banner-texto h1 {
+  font-size: 96px;
 }
 
 .titulos {
@@ -47,11 +60,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: justify;
+  margin-bottom: 5%;
 }
 
 .valores h3 {
   margin: 30px 0;
+  text-align: center;
 }
 
 .valores-card {
@@ -80,58 +95,182 @@
   }
 }
 
-.navbarEstilos {
-  background-color: white !important;
-  color: black !important;
-  padding: 0 20%;
-  height: 8%;
+/* .navbarEstilos{
+    background-color: white !important;
+    color: black !important;
+    padding: 0 20%;
+    height: 8%;
 }
 
-.botonesNabvar {
-  margin: 0 50px;
-}
-
-.malibu {
-  margin-bottom: 30%;
-}
-
-.sobreMalibu {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-}
-
-.sobreMalibu-body {
-  margin-top: 10%;
-  padding: 25% 5%;
+.botonesNabvar{
+    margin: 0 50px;
+} */
+/* Navbar */
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.navbar__logo {
+  width: 75px;
+  height: 25;
+  margin-left: 5%;
+  border-radius: 50%;
+}
+
+.navbar__boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar__boton--home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid #db8a8a;
+  padding: 3px;
+  border-radius: 15px;
+  color: black;
+  background-color: #db8a8a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+}
+
+.navbar__boton--home:hover {
+  border: solid #0000;
+  background-color: red;
+  /* text-transform: uppercase; */
+}
+
+.malibu {
+  background-image: url("../../img/Group 130.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  height: 1100px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10%;
 }
 
-.sobreMalibu-imagen {
-  width: 80%;
-  height: 80%;
+.malibu-imagen {
+  margin: 0 auto;
 }
 
-.sobreMalibu-texto {
-  border: solid 2px white;
-  background-color: rgba(80, 255, 255, 0.5);
+.malibu-imagen__img {
+  width: 500px;
+}
+
+.malibu-texto {
+  margin-left: 25%;
+  margin-right: 25%;
+  border: solid 3px white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: left;
   height: 450px;
-  padding: 3%;
-  width: 40%;
 }
 
-.sobreMalibu-texto h2 {
-  font-size: 32px;
-  text-align: left;
+.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  margin-bottom: 5%;
 }
 
-.sobreMalibu-texto p {
-  font-size: 15px;
-  text-align: left;
+.productos-leyenda {
+  margin-top: 10%;
+}
+
+.productos-leyenda p {
+  padding: 2% 35%;
+}
+
+.productos h3 {
+  margin: 30px 0;
+}
+
+.productos-card {
+  max-width: 350px;
+  min-height: 500px;
+  margin: 25px;
+  border: solid 3px grey;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.productos-card h3 {
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background-color: #6D6875;
+  color: #EDE0D4;
+}
+
+.footer__iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.iconoFooter {
+  width: 35px;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-whatsapp {
+  background: #45bbff;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

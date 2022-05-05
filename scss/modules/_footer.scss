@@ -1,0 +1,18 @@
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color:#6D6875;
+    color: #EDE0D4;
+    &__iconos{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+    }
+}
+
+.iconoFooter{
+    width: 35px;
+}

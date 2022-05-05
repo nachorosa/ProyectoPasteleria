@@ -1,4 +1,4 @@
-.navbarEstilos{
+/* .navbarEstilos{
     background-color: white !important;
     color: black !important;
     padding: 0 20%;
@@ -7,5 +7,43 @@
 
 .botonesNabvar{
     margin: 0 50px;
-}
+} */
 
+/* Navbar */
+
+$color1: #ffffff;
+$color2: rgb(219, 138, 138);
+$color3: #0000;
+
+.navbar{
+    display: flex;
+    background-color:$color1 ;
+    width: 100%;
+        &__logo{
+            width: 75px;
+            height:25;
+            margin-left: 5%;
+            border-radius: 50%;
+        }
+        &__boton{
+            display: flex;
+            width: 50%;
+            justify-content:space-evenly;
+            &--home{
+                display: flex;
+                border: solid $color2;
+                padding: 3px;
+                border-radius: 15px;
+                color: black;
+                background-color:$color2;
+                justify-content: center;
+                margin: 2%;
+                &:hover{
+                    border: solid $color3;
+                    background-color: red;
+                    /* text-transform: uppercase; */
+                }
+                }
+            }
+    
+    }

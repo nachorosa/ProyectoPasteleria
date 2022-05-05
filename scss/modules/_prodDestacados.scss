@@ -1,0 +1,30 @@
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 5%;
+    &-leyenda{
+        margin-top: 10%;
+        & p{
+            padding: 2% 35%;
+        }
+
+    }
+    & h3{
+        margin: 30px 0;
+    }
+    &-card{
+        max-width: 350px ;
+        min-height: 500px;
+        margin: 25px;
+        border: solid 3px grey;
+        border-radius: 5px;
+        padding: 25px;
+
+        & h3{
+            text-align: center;
+        }
+    }
+
+}
