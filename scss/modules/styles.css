@@ -16,6 +16,8 @@
 }
 
 .banner-body {
+  margin: 0;
+  width: 100%;
   height: 50%;
   display: -ms-grid;
   display: grid;
@@ -23,17 +25,16 @@
       grid-template-rows: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .banner-imagen {
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-right: 0;
 }
 
 .banner-imagen__img {
-  width: 500px;
+  width: 100%;
 }
 
 .banner-texto {
