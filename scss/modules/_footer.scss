@@ -1,18 +1,28 @@
 /* FOOTER */
+
+$color3: #0000;
+$color4: #FDEEEA;
+$color5: #043543;
+
+
 .footer{
+    height: 250px !important;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    background-color:#6D6875;
-    color: #EDE0D4;
+    background-color: $color4;
+    color: $color5;
     &__iconos{
         display: flex;
+        flex-direction: column;
         width: 30%;
         justify-content: space-around;
+        align-items: center;
     }
 }
 
 .iconoFooter{
-    width: 35px;
+    margin: 20px;
 }

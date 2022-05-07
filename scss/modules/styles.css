@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%22");
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%22"); */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Anton", sans-serif;
+  font-family: 'Bebas Neue', cursive;
+  /*     font-weight: bolder; */
+  color: #043543;
 }
 
 .banner {
-  background-image: url("../../img/Group 128.svg");
+  background-image: url("../../img/Group 128.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 1100px;
@@ -38,49 +41,28 @@
 }
 
 .banner-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
   padding-left: 10%;
   font-size: 20px;
 }
 
 .banner-texto h1 {
-  font-size: 96px;
-}
-
-.titulos {
-  text-align: center;
-}
-
-.valores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: justify;
+  font-weight: bolder;
   margin-bottom: 5%;
-}
-
-.valores h3 {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.valores-card {
-  max-width: 350px;
-  min-height: 500px;
-  margin: 25px;
-  border: solid 3px grey;
-  border-radius: 5px;
-  padding: 25px;
-}
-
-.valores-card__img {
-  margin: 0 23%;
+  font-size: 96px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -112,53 +94,57 @@
 } */
 /* Navbar */
 .navbar {
+  height: 112px;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #434343;
+  background-color: #FDEEEA;
   width: 100%;
 }
 
 .navbar__logo {
-  width: 75px;
-  height: 25;
+  width: 135px;
+  height: 60px;
   margin-left: 5%;
-  border-radius: 50%;
 }
 
 .navbar__boton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: #FDCA7D;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navbar__boton--home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid white;
   padding: 3px;
-  border-radius: 15px;
-  background-color: green;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2%;
 }
 
+.navbar__boton--home a {
+  color: #043543 !important;
+}
+
 .navbar__boton--home:hover {
-  border: solid blue;
-  background-color: white;
-  /* text-transform: uppercase; */
+  color: #00009b !important;
 }
 
 .malibu {
-  background-image: url("../../img/Group 130.svg");
+  background-image: url("../../img/Group 130.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: -ms-grid;
@@ -194,6 +180,17 @@
   height: 450px;
 }
 
+.malibu-texto-p {
+  font-weight: lighter !important;
+}
+
+.seccion-productos {
+  background-image: url("../../img/Vector 34 (Stroke) (1).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+
 .productos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,11 +206,13 @@
 }
 
 .productos-leyenda {
-  margin-top: 10%;
+  margin-top: 5% !important;
+  margin-bottom: 2% !important;
 }
 
 .productos-leyenda p {
-  padding: 2% 35%;
+  padding: 0 35%;
+  padding-top: 2%;
 }
 
 .productos h3 {
@@ -227,20 +226,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 350px;
   min-height: 500px;
-  margin: 25px;
-  border: solid 3px grey;
+  margin: 3% 5%;
   border-radius: 5px;
 }
 
 .productos-card__img {
   max-height: 273px;
-  max-width: 273px;
+  min-height: 200px;
+  max-width: 230px;
 }
 
 .productos-card h3 {
@@ -249,6 +251,7 @@
 
 /* FOOTER */
 .footer {
+  height: 250px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,21 +261,28 @@
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: #6D6875;
-  color: #EDE0D4;
+  background-color: #FDEEEA;
+  color: #043543;
 }
 
 .footer__iconos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .iconoFooter {
-  width: 35px;
+  margin: 20px;
 }
 
 .float {
@@ -299,5 +309,43 @@
 
 .my-float {
   margin-top: 16px;
+}
+
+.valores {
+  color: #043543;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+.valores h3 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.valores-card {
+  max-width: 350px;
+  min-height: 500px;
+  margin: 0 5%;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.valores-card__img {
+  margin: 0 23%;
+}
+
+.titulos {
+  color: #043543;
+  text-align: center;
+  margin: 15% 0 5% 0;
 }
 /*# sourceMappingURL=styles.css.map */

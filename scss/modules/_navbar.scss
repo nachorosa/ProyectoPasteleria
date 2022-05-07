@@ -11,37 +11,45 @@
 
 /* Navbar */
 
-$color1: #434343;
+
+$color3: #0000;
+$color4: #FDEEEA;
+$color5: #043543;
 
 
 .navbar{
+
+    height: 112px;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: center;
     display: flex;
-    background-color:$color1 ;
+    background-color:$color4 ;
     width: 100%;
         &__logo{
-            width: 75px;
-            height:25;
+            width: 135px;
+            height:60px;
             margin-left: 5%;
-            border-radius: 50%;
         }
         &__boton{
             display: flex;
-            width: 50%;
-            justify-content:space-evenly;
-            color: #FDCA7D;
+            width: 100%;
+            justify-content:flex-end;
             &--home{
                 display: flex;
-                border: solid white;
                 padding: 3px;
-                border-radius: 15px;
-
-                background-color:green;
+                
                 justify-content: center;
                 margin: 2%;
+                & a{
+                    color: $color5 !important;
+                }
                 &:hover{
-                    border: solid blue;
-                    background-color: white;
-                    /* text-transform: uppercase; */
+                    color: rgb(0, 0, 155) !important;
+
                 }
                 }
             }

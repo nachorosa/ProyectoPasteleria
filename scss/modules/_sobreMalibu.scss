@@ -1,7 +1,7 @@
 
 
 .malibu{
-    background-image: url('../../img/Group\ 130.svg');
+    background-image: url('../../img/Group\ 130.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -27,5 +27,8 @@
         padding: 5%;
         text-align: left;
         height: 450px;
+        &-p{
+            font-weight: lighter !important;
+        }
     }
 }
