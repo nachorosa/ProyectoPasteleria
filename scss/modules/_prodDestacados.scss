@@ -15,12 +15,19 @@
         margin: 30px 0;
     }
     &-card{
+        display: flex;
+        align-items:center ;
+        flex-direction: column;
         max-width: 350px ;
         min-height: 500px;
         margin: 25px;
         border: solid 3px grey;
         border-radius: 5px;
-        padding: 25px;
+
+        &__img{
+            max-height: 273px;
+            max-width: 273px;
+        }
 
         & h3{
             text-align: center;

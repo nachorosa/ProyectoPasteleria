@@ -11,9 +11,8 @@
 
 /* Navbar */
 
-$color1: #ffffff;
-$color2: rgb(219, 138, 138);
-$color3: #0000;
+$color1: #434343;
+
 
 .navbar{
     display: flex;
@@ -29,18 +28,19 @@ $color3: #0000;
             display: flex;
             width: 50%;
             justify-content:space-evenly;
+            color: #FDCA7D;
             &--home{
                 display: flex;
-                border: solid $color2;
+                border: solid white;
                 padding: 3px;
                 border-radius: 15px;
-                color: black;
-                background-color:$color2;
+
+                background-color:green;
                 justify-content: center;
                 margin: 2%;
                 &:hover{
-                    border: solid $color3;
-                    background-color: red;
+                    border: solid blue;
+                    background-color: white;
                     /* text-transform: uppercase; */
                 }
                 }
