@@ -32,3 +32,19 @@
         }
     }
 }
+
+
+// MOBILE
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .malibu{
+        grid-template-columns: 1fr;
+        &-imagen__img{
+                width: 0px;
+        }
+        &-texto{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
+}
