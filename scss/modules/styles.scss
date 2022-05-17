@@ -5,3 +5,10 @@
 @import './footer';
 @import './buttonWSP';
 @import './nuestrosValores';
+@import '../modules/pagina\ productos/productos';
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
