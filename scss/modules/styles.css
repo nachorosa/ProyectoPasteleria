@@ -82,25 +82,11 @@
   }
 }
 
-/* .navbarEstilos{
-    background-color: white !important;
-    color: black !important;
-    padding: 0 20%;
-    height: 8%;
-}
-
-.botonesNabvar{
-    margin: 0 50px;
-} */
-/* Navbar */
 .navbar {
-  height: 112px;
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue';
   font-size: 24px;
   font-weight: bold;
   line-height: 20px;
-  letter-spacing: 0.25px;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,8 +95,8 @@
 }
 
 .navbar__logo {
-  width: 135px;
-  height: 60px;
+  width: 75px;
+  height: 25;
   margin-left: 5%;
 }
 
@@ -119,9 +105,11 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #FDCA7D;
+  font-size: 24px;
 }
 
 .navbar__boton--home {
@@ -129,17 +117,17 @@
   display: -ms-flexbox;
   display: flex;
   padding: 3px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 2%;
+  border-radius: 15px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-.navbar__boton--home a {
+.navbar__boton--home--ruta {
   color: #043543 !important;
 }
 
-.navbar__boton--home:hover {
+.navbar__boton--home--ruta:hover {
   color: #00009b !important;
 }
 
