@@ -1,28 +1,32 @@
 .bannerProductos {
-    background-image: url('../../img/Group\ 128.png');
+    background-image: url("../../img/Group\ 128.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 1100px;
+    background-size: cover;
+    height: 100%;
     width: 100%;
+    margin-bottom: 40%;
+    margin-top: 10%;
 
-    &-body{
+    &-body {
         margin: 0;
         width: 100%;
         height: 50%;
         display: grid;
-        grid-template-rows: 1fr ;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
-    &-imagen{
-        margin: auto ;
+    &-imagen {
+        margin: auto;
         margin-top: 5%;
         margin-right: 0;
-        &__img{
+
+        &__img {
             width: 100%;
         }
     }
-    &-texto{
+
+    &-texto {
         display: flex;
         align-items: left;
         justify-content: center;
@@ -30,7 +34,8 @@
         text-align: left;
         padding-left: 10%;
         font-size: 20px;
-        & h1{
+
+        & h1 {
             font-weight: bolder;
             margin-bottom: 5%;
             font-size: 96px;
@@ -38,37 +43,38 @@
     }
 }
 
-.contenedor{
+.contenedor {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url('../../../img/Pagina\ Productos/svgProductos.png');
+    background-image: url("../../../img/pagina-productos/svgProductos.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0px 800px;
     margin-bottom: 10%;
 }
 
-.containerProductos{
+.containerProductos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 6% 0;
 
-    &-img{
+    &-img {
         max-height: 364px;
         min-width: 363px;
-        width: 200px
-    }
-    &-texto{
-        width: 500px;
-        height: 265px;
-        background-color:#FFD7CE ;
-        border-radius: 10px;
-        padding:30px;
+        width: 200px;
     }
 
-    &-boton{
+    &-texto {
+        width: 500px;
+        height: 265px;
+        background-color: #ffd7ce;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    &-boton {
         width: 130px;
         height: 43px;
         background-color: F4F8FB;
@@ -77,68 +83,76 @@
     }
 }
 
-
 @media (max-width: 1080px) {
-    
+    .seccionProductos {
+        font-size: 12px !important;
+    }
 
     /* Banner */
-    .bannerProductos{
-        /* background-size: cover;
-        height: 1100px;
-        width: 100%; */
+    .bannerProductos {
+
+        &-body {
+            min-height: 500px;
+        }
 
         .bannerProductos-imagen {
             width: 0%;
             height: 0%;
         }
-    
+
         .bannerProductos-texto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
             & h2 {
                 font-size: 48px;
-                margin: 5% 10% 5px 40px;
-                text-align: left;
+                margin: auto;
+                text-align: center;
             }
-    
+
             & p {
                 font-size: 14px;
-                padding: 0% 10%;
-                text-align: left;
+                text-align: center;
             }
         }
     }
 
     /* Productos */
-    .contenedor{
+    .contenedor {
         height: 100%;
         display: flex;
         flex-direction: column;
-        background-image: url('../../../img/Pagina\ Productos/svgProductos.png');
+        background-image: url("../../../img/pagina-productos/fondoMedioMobile.png");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: 0px 800px;
+        background-position:bottom;
         margin-bottom: 10%;
     }
-    
-    .containerProductos{
+
+    .containerProductos {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 6% 0;
-    
-        &-img{
-            max-height: 364px;
-            min-width: 363px;
-            width: 200px
+        width: auto;
+        margin: 10% 0;
+        background-color: #fdeeea;
+
+        &-img {
+            max-height: 142px;
+            min-width: 140px;
         }
-        &-texto{
+
+        &-texto {
             width: 500px;
             height: 265px;
-            background-color:#FFD7CE ;
-            border-radius: 10px;
-            padding:30px;
+            background-color: #ffd7ce;
+            border-radius: 0;
+            padding: 30px;
         }
-    
-        &-boton{
+
+        &-boton {
             width: 130px;
             height: 43px;
             background-color: F4F8FB;
@@ -146,4 +160,40 @@
             border-radius: 10px;
         }
     }
+
+    .seccion-productosDestacados {
+        margin-top: 20%;
+        background-color: #F4F8FB;
+    }
+
+    .productos-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__img {
+            min-height: 83px;
+            max-width: 90px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .bannerProductos {
+
+        &-body {
+            min-height: 100%;
+        }
+}
+
+.contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../img/pagina-productos/fondoMedioMobile.png");
+    background-size: 100%;
+    background-position:center;
+}
 }
