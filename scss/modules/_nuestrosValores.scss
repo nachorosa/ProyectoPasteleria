@@ -27,7 +27,7 @@ $color5: #043543;
 .titulos{
     color: $color5;
     text-align: center;
-    margin: 15% 0 5% 0;
+    margin: 10% 0 5% 0;
 }
 
 // MOBILE
@@ -41,9 +41,7 @@ $color5: #043543;
             min-height: 80%;
             padding: 2%;
             &__img{
-                margin: 10px;
-                padding: 25px;
-                max-width: 40%;
+                margin: 35% 10px;
             }
         }
     }

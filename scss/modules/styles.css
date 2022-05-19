@@ -13,7 +13,7 @@
   background-image: url("../../img/Group 128.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1100px;
+  height: 900px;
   width: 100%;
 }
 
@@ -31,12 +31,18 @@
 
 .banner-imagen {
   margin: auto;
-  margin-top: 5%;
-  margin-right: 0;
+  margin-left: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .banner-imagen__img {
-  width: 100%;
+  width: 60%;
 }
 
 .banner-texto {
@@ -46,15 +52,13 @@
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  padding-left: 10%;
+  padding-top: 30%;
+  padding-left: 15%;
   font-size: 20px;
 }
 
@@ -65,18 +69,24 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .banner {
+    height: 450px;
+  }
+  .banner-body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .banner-imagen {
     width: 0%;
     height: 0%;
   }
-  .banner-texto h2 {
-    font-size: 48px;
-    margin: 5% 10% 5px 40px;
+  .banner-texto h1 {
+    font-size: 62px;
     text-align: left;
+    padding: 0% 5%;
   }
   .banner-texto p {
-    font-size: 14px;
-    padding: 0% 10%;
+    padding: 0% 5%;
     text-align: left;
   }
 }
@@ -127,7 +137,7 @@
 }
 
 .navbar__boton--home--ruta:hover {
-  color: #00009b !important;
+  color: #00109b !important;
 }
 
 .malibu {
@@ -148,17 +158,22 @@
 }
 
 .malibu-imagen {
-  margin-top: 3%;
-  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
 }
 
 .malibu-imagen__img {
-  width: 700px;
+  width: 70%;
 }
 
 .malibu-texto {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
   border: solid 3px white;
   background-color: white;
   border-radius: 10px;
@@ -173,15 +188,23 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .malibu {
+    display: -ms-grid;
+    display: grid;
+    height: 600px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px;
   }
   .malibu-imagen__img {
     width: 0px;
   }
   .malibu-texto {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
   }
 }
 
@@ -267,7 +290,7 @@
     padding: 2%;
   }
   .productos-card__img {
-    margin: 0px 10px;
+    padding: 70px 10px;
   }
 }
 
@@ -382,7 +405,7 @@
 .titulos {
   color: #043543;
   text-align: center;
-  margin: 15% 0 5% 0;
+  margin: 10% 0 5% 0;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -608,6 +631,8 @@
     background-color: F4F8FB;
     border: none;
     border-radius: 10px;
+    margin: 35% 10px;
+
   }
   .seccion-productosDestacados {
     margin-top: 20%;
@@ -659,11 +684,5 @@
     background-size: 100%;
     background-position: center;
   }
-}
-
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
