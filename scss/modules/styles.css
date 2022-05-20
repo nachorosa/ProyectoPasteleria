@@ -362,6 +362,9 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    padding-bottom: 15%;
+  }
   .footer__logo {
     width: 200px;
   }
@@ -688,7 +691,6 @@
   width: 65%;
   height: 65%;
   border-radius: 20px;
-  margin: 5%;
 }
 
 .contacto__parte1__img-redes {

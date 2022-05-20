@@ -7,7 +7,6 @@ $color6: #C3E0DC;
 
 .footer{
     height: 250px !important;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +30,7 @@ $color6: #C3E0DC;
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .footer{
+        padding-bottom: 15%;
         &__logo{
             width: 200px;
         }
