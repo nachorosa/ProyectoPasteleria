@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <!-- Logo del navbar -->
-                <img src="./img/Group 155 (1).png" alt="" class="navbar__logo">
+                <img src="../img/Group 155 (1).png" alt="" class="navbar__logo">
                 <!-- Boton hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,22 +41,26 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav navbar__boton">
                         <li class="nav-item navbar__boton--home ">
-                            <a class="nav-link active " aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link active navbar__boton--home--ruta" aria-current="page"
+                                href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item navbar__boton--home ">
-                            <a class="nav-link active " href="./malibu.html"> MALIBU</a>
+                            <a class="nav-link active navbar__boton--home--ruta" href="../pages/malibu.html"> MALIBU</a>
                         </li>
                         <li class="nav-item navbar__boton--home ">
-                            <a class="nav-link active " href="./productos.html">PRODUCTOS</a>
+                            <a class="nav-link active nav-item navbar__boton--home--ruta" href="../pages/productos.html">PRODUCTOS</a>
                         </li>
                         <li class="nav-item navbar__boton--home ">
-                            <a class="nav-link active " href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link active navbar__boton--home--ruta" href="../pages/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
+
+
     <main>
 
             <!-- BANNER -->
@@ -69,7 +73,7 @@
                             quos temporibus tempora suscipit officia placeat.</p>
                     </div>
                     <div class="banner-imagen">
-                        <img class="banner-imagen__img" src="./img/tortaChocolate.png" alt="">
+                        <img class="banner-imagen__img" src="../img/Foto 2 pequeña 2.png" alt="">
                     </div>
                 </div>
             </section>
@@ -210,9 +214,12 @@
                 </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <img class="footer-img" src="../img/Group 180 (2).png" alt="">
+            <div>
+                <img class="footer__logo" src="../img/Group 180 (2).png" alt="">
+            </div>
             <!-- BOTONES DE REDES -->
             <div class="footer__iconos">
                 <h2>SEGUINOS EN LAS REDES</h2>
@@ -221,7 +228,6 @@
                     <a href="#"><img src="../img/Iconos Redes/Group 224.png" alt="icono de instagram" class="iconoFooter"></a>
                     <a href="#"><img src="../img/Iconos Redes/Group 225.png" alt="icono de twitter" class="iconoFooter"></a>
                 </div>
-
             </div>
         </div>
     </footer>

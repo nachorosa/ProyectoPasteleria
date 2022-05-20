@@ -1,0 +1,86 @@
+$color1: #f4f8fbc2;
+$color2: #043543;
+
+.banner-contacto{
+    background-image: url('../../img/pagina-malibu/Group\ 271.png');
+    background-color: $color1;
+}
+
+
+.contacto{
+    background-color: $color1;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    &__parte1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__parte1__img{
+        width: 65%;
+        height: 65%;
+        border-radius: 20px;
+        margin: 5%;
+        &-redes{
+            width: 35%;
+            height: 35%;
+        }
+    }
+    &__parte2{
+        padding: 17% 20%;
+        color: $color2;
+        margin: 15% 0px;
+        h2{
+            font-size: 72px;
+        }        
+        p{
+            font-size: 18px;
+        }
+    }
+    &-redes{
+        background-color: #ffffff;
+    }
+}
+
+// MOBILE
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .banner-contacto{
+        background-image: url('../../img/Group\ 128.png');
+    }
+
+    .contacto{
+        display: block;
+        &__parte1{
+            display: grid;
+            margin: 0px;
+        }
+        &__parte1__img{
+            width: 100%;
+            &-redes{
+                width: 100px;
+                height: 100px;
+                margin: 0px 20px;
+                
+            }
+        }
+        &__parte2{
+            padding: 5%;
+            color: $color2;
+            margin: 5%;
+            h2{
+                font-size: 36px;
+            }        
+            p{
+                font-size: 15px;
+            }
+        }
+
+        &-redes{
+            display: flex;
+        }
+    }
+
+
+}

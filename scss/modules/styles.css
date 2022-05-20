@@ -60,7 +60,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  padding-top: 30%;
+  padding-top: 5%;
   padding-left: 15%;
   font-size: 20px;
 }
@@ -73,7 +73,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
-    height: 450px;
+    height: 300px;
     background-size: 600px;
   }
   .banner-body {
@@ -212,8 +212,7 @@
     width: 0px;
   }
   .malibu-texto {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 10%;
     height: 500px;
   }
 }
@@ -338,7 +337,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: #FDEEEA;
+  background-color: #C3E0DC;
   color: #043543;
 }
 
@@ -358,17 +357,13 @@
           align-items: center;
 }
 
-.footer-img {
-  width: 200px;
-}
-
 .iconoFooter {
   margin: 5px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .footer {
-    padding-bottom: 50px;
+  .footer__logo {
+    width: 200px;
   }
   .footer__iconos h2 {
     font-size: 20px;
@@ -581,7 +576,7 @@
 .containerProductos-boton {
   width: 130px;
   height: 43px;
-  background-color: F4F8FB;
+  background-color: #F4F8FB;
   border: none;
   border-radius: 10px;
 }
@@ -633,7 +628,7 @@
   .containerProductos-boton {
     width: 130px;
     height: 43px;
-    background-color: F4F8FB;
+    background-color: #F4F8FB;
     border: none;
     border-radius: 10px;
   }
@@ -659,6 +654,198 @@
     background-image: url("../../../img/pagina-productos/fondoMedioMobile.png");
     background-size: 100%;
     background-position: center;
+  }
+}
+
+.banner-contacto {
+  background-image: url("../../img/pagina-malibu/Group 271.png");
+  background-color: #f4f8fbc2;
+}
+
+.contacto {
+  background-color: #f4f8fbc2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contacto__parte1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto__parte1__img {
+  width: 65%;
+  height: 65%;
+  border-radius: 20px;
+  margin: 5%;
+}
+
+.contacto__parte1__img-redes {
+  width: 35%;
+  height: 35%;
+}
+
+.contacto__parte2 {
+  padding: 17% 20%;
+  color: #043543;
+  margin: 15% 0px;
+}
+
+.contacto__parte2 h2 {
+  font-size: 72px;
+}
+
+.contacto__parte2 p {
+  font-size: 18px;
+}
+
+.contacto-redes {
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .banner-contacto {
+    background-image: url("../../img/Group 128.png");
+  }
+  .contacto {
+    display: block;
+  }
+  .contacto__parte1 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+  }
+  .contacto__parte1__img {
+    width: 100%;
+  }
+  .contacto__parte1__img-redes {
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px;
+  }
+  .contacto__parte2 {
+    padding: 5%;
+    color: #043543;
+    margin: 5%;
+  }
+  .contacto__parte2 h2 {
+    font-size: 36px;
+  }
+  .contacto__parte2 p {
+    font-size: 15px;
+  }
+  .contacto-redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.banner-malibu {
+  background-image: url("../../img/pagina-malibu/Group 271.png");
+  background-color: #f4f8fbc2;
+}
+
+.pasteleria {
+  background-color: #f4f8fbc2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.pasteleria__parte1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pasteleria__parte1__img {
+  width: 65%;
+  height: 65%;
+  border-radius: 20px;
+  margin: 5%;
+}
+
+.pasteleria__parte1__img-mara {
+  width: 35%;
+  height: 35%;
+}
+
+.pasteleria__parte2 {
+  padding: 17% 20%;
+  color: #043543;
+  margin: 15% 0px;
+}
+
+.pasteleria__parte2 h2 {
+  font-size: 72px;
+}
+
+.pasteleria__parte2 p {
+  font-size: 18px;
+}
+
+.pasteleria-mara {
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .banner-malibu {
+    background-image: url("../../img/Group 128.png");
+  }
+  .pasteleria {
+    display: block;
+  }
+  .pasteleria__parte1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pasteleria__parte1__img {
+    width: 80%;
+  }
+  .pasteleria__parte1__img-mara {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+  .pasteleria__parte2 {
+    display: -ms-grid;
+    display: grid;
+    padding: 7%;
+    color: #043543;
+    margin: 0px;
+  }
+  .pasteleria__parte2 h2 {
+    font-size: 36px;
+  }
+  .pasteleria__parte2 p {
+    font-size: 15px;
+  }
+  .pasteleria-mara {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
