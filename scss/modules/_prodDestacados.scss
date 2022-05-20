@@ -29,14 +29,23 @@
         justify-content: flex-end;
         flex-direction: column;
         max-width: 350px ;
-        min-height: 500px;
+        max-height: 500px;
         margin: 3% 5%;
         border-radius: 5px;
 
         &__img{
-            max-height: 273px;
+            /* max-height: 273px; */
             min-height: 200px;
             max-width: 230px;
+        }
+
+        &__btn{
+            background-color: #FFD7CE;
+            color:#043543 ;
+            width: 130px;
+            height: 43px;
+            border: none;
+            border-radius: 6px;
         }
 
         & h3{
@@ -48,6 +57,10 @@
 
 // MOBILE
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .seccion-productos{
+        font-size: 14px;
+    }
+
     .productos{
         display: block;
         &-leyenda{
@@ -62,8 +75,17 @@
             min-height: 80%;
             padding: 2%;
             &__img{
-                // margin: 100px;
-                padding: 70px 10px;
+                min-height: 120px;
+                max-width: 110px;
+                margin-right: 20px;
+            }
+            &__btn{
+                background-color: #FFD7CE;
+                color:#043543 ;
+                width: 90px;
+                height: 30px;
+                border: none;
+                border-radius: 6px;
             }
         }
     

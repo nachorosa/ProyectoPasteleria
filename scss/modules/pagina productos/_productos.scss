@@ -83,50 +83,9 @@
     }
 }
 
-/* PRODUCTOS DESTACADOS */
-
-.productosDestacados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    margin-bottom: 20%;
-}
-
-
 @media (max-width: 1080px) {
     .seccionProductos {
-        font-size: 12px !important;
-    }
-
-    /* Banner */
-    .bannerProductos {
-        &-body {
-            min-height: 500px;
-        }
-
-        .bannerProductos-imagen {
-            width: 0%;
-            height: 0%;
-        }
-
-        .bannerProductos-texto {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            & h2 {
-                font-size: 48px;
-                margin: auto;
-                text-align: center;
-            }
-
-            & p {
-                font-size: 14px;
-                text-align: center;
-            }
-        }
+        font-size: 14px !important;
     }
 
     /* Productos */
@@ -156,7 +115,7 @@
 
         &-texto {
             width: 500px;
-            height: 265px;
+            height: auto;
             background-color: #ffd7ce;
             border-radius: 0;
             padding: 30px;
@@ -174,32 +133,6 @@
     .seccion-productosDestacados {
         margin-top: 20%;
         background-color: #f4f8fb;
-    }
-
-    /* PRODUCTOS DESTACADOS */
-    .productosDestacados {
-        display: inherit;
-        margin-top: 15%;
-    }
-
-    .productos-card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &__img {
-            min-height: 83px;
-            max-width: 90px;
-            margin-right: 20px;
-        }
-
-        &__text{
-            text-align: left;
-
-            h3{
-                text-align: left;
-            }
-        }
     }
 }
 

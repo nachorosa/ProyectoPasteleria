@@ -52,6 +52,9 @@
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -71,6 +74,7 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
     height: 450px;
+    background-size: 600px;
   }
   .banner-body {
     -ms-grid-columns: 1fr;
@@ -79,6 +83,11 @@
   .banner-imagen {
     width: 0%;
     height: 0%;
+  }
+  .banner-texto {
+    font-size: 14px;
+    padding-top: 0;
+    padding-left: 0;
   }
   .banner-texto h1 {
     font-size: 62px;
@@ -188,6 +197,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .malibu {
+    background-image: url("../../img/FondoSobreMalibuMobile.png");
     display: -ms-grid;
     display: grid;
     height: 600px;
@@ -258,15 +268,24 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 350px;
-  min-height: 500px;
+  max-height: 500px;
   margin: 3% 5%;
   border-radius: 5px;
 }
 
 .productos-card__img {
-  max-height: 273px;
+  /* max-height: 273px; */
   min-height: 200px;
   max-width: 230px;
+}
+
+.productos-card__btn {
+  background-color: #FFD7CE;
+  color: #043543;
+  width: 130px;
+  height: 43px;
+  border: none;
+  border-radius: 6px;
 }
 
 .productos-card h3 {
@@ -274,6 +293,9 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .seccion-productos {
+    font-size: 14px;
+  }
   .productos {
     display: block;
   }
@@ -290,7 +312,17 @@
     padding: 2%;
   }
   .productos-card__img {
-    padding: 70px 10px;
+    min-height: 120px;
+    max-width: 110px;
+    margin-right: 20px;
+  }
+  .productos-card__btn {
+    background-color: #FFD7CE;
+    color: #043543;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
   }
 }
 
@@ -326,11 +358,18 @@
           align-items: center;
 }
 
+.footer-img {
+  width: 200px;
+}
+
 .iconoFooter {
   margin: 5px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    padding-bottom: 50px;
+  }
   .footer__iconos h2 {
     font-size: 20px;
   }
@@ -396,10 +435,19 @@
   margin: 0 5%;
   border-radius: 5px;
   padding: 3%;
-}
-
-.valores-card__img {
-  margin: 0 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .titulos {
@@ -419,11 +467,15 @@
     max-width: 90%;
     min-height: 80%;
     padding: 2%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .valores-card__img {
-    margin: 10px;
-    padding: 25px;
-    max-width: 40%;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 8%;
   }
 }
 
@@ -534,56 +586,9 @@
   border-radius: 10px;
 }
 
-/* PRODUCTOS DESTACADOS */
-.productosDestacados {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: justify;
-  margin-bottom: 20%;
-}
-
 @media (max-width: 1080px) {
   .seccionProductos {
-    font-size: 12px !important;
-  }
-  /* Banner */
-  .bannerProductos-body {
-    min-height: 500px;
-  }
-  .bannerProductos .bannerProductos-imagen {
-    width: 0%;
-    height: 0%;
-  }
-  .bannerProductos .bannerProductos-texto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .bannerProductos .bannerProductos-texto h2 {
-    font-size: 48px;
-    margin: auto;
-    text-align: center;
-  }
-  .bannerProductos .bannerProductos-texto p {
-    font-size: 14px;
-    text-align: center;
+    font-size: 14px !important;
   }
   /* Productos */
   .contenedor {
@@ -620,7 +625,7 @@
   }
   .containerProductos-texto {
     width: 500px;
-    height: 265px;
+    height: auto;
     background-color: #ffd7ce;
     border-radius: 0;
     padding: 30px;
@@ -631,39 +636,10 @@
     background-color: F4F8FB;
     border: none;
     border-radius: 10px;
-    margin: 35% 10px;
-
   }
   .seccion-productosDestacados {
     margin-top: 20%;
     background-color: #f4f8fb;
-  }
-  /* PRODUCTOS DESTACADOS */
-  .productosDestacados {
-    display: inherit;
-    margin-top: 15%;
-  }
-  .productos-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .productos-card__img {
-    min-height: 83px;
-    max-width: 90px;
-    margin-right: 20px;
-  }
-  .productos-card__text {
-    text-align: left;
-  }
-  .productos-card__text h3 {
-    text-align: left;
   }
 }
 
@@ -684,5 +660,11 @@
     background-size: 100%;
     background-position: center;
   }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
