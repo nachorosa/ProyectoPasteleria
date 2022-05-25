@@ -1,0 +1,55 @@
+$color3: #FDCA7D;
+$color4: #fdeeea;
+$color5: rgba(4, 53, 67, 0.7);;
+
+.containerNav{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.navbarProductos{
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    display: flex;
+    background-color:$color4 ;
+    width: 50%;
+        &__logo{
+            width: 75px;
+            height:25;
+            margin-left: 5%;
+        }
+        &__boton{
+            display: flex;
+            width: 100%;
+            justify-content:space-evenly;
+            color: $color3;
+            font-size: 24px;
+            &--home{
+                display: flex;
+                padding: 3px;
+                border-radius: 15px;
+                justify-content: left;
+                &--ruta{
+                    color: $color5 !important;
+                    &:hover{
+                        color: rgb(0, 16, 155) !important;
+                        }
+                }
+                }
+            }
+    }
+
+    @media (max-width: 1080px) {
+
+        .navbarProductos{
+
+            width: 100%;
+            &__boton{
+                flex-direction: row;
+                font-size: 13px;
+            }
+    }
+}
