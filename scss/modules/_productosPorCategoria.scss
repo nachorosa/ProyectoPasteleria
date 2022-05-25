@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+$colorFondoCard: #FFD7CE;
+
+.backgroundProductos{
+    background-image: url('../../img/pagina-productos/svgProductos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.containerProductos{
+    display: grid;
+    height: 100%;
+    margin: 5% auto;
+    grid-template-columns: repeat(auto-fit,
+            minmax(350px, 1fr));
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &__card{
+        width: 356px;
+        height: 538px;
+        background-color: $colorFondoCard;
+        margin: auto;
+        overflow: hidden;
+        &--img{
+            margin: -30px auto;
+            max-height: 455px;
+            overflow: hidden;
+        }
+
+        &--txt{
+            overflow: hidden;
+            min-height: 100px;
+            text-align: center;
+            margin: 10% auto;
+            padding: 10px;
+            & h1{
+                font-size: 25px;
+            }
+            & p{
+                font-family: 'Roboto Slab', serif;
+                font-weight: 600;
+                font-size: 14px;
+                
+            }
+        }
+    }
+}
