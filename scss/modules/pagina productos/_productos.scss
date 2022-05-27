@@ -61,9 +61,8 @@
     margin: 6% 0;
 
     &-img {
-        max-height: 364px;
-        min-width: 363px;
-        width: 200px;
+        width: 25%;
+        
     }
 
     &-texto {
@@ -71,7 +70,10 @@
         height: 265px;
         background-color: #ffd7ce;
         border-radius: 10px;
-        padding: 30px;
+        padding: 60px;
+        & h2{
+            font-size: 40px;
+        }
     }
 
     &-boton {
@@ -119,6 +121,10 @@
             background-color: #ffd7ce;
             border-radius: 0;
             padding: 30px;
+
+            & h2{
+                font-size: 30px;
+            }
         }
 
         &-boton {

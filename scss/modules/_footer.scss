@@ -4,6 +4,7 @@ $color3: #0000;
 $color4: #FDEEEA;
 $color5: #043543;
 $color6: #C3E0DC;
+$color7: #FFD7CE;
 
 .footer{
     height: 250px !important;
@@ -12,7 +13,7 @@ $color6: #C3E0DC;
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    background-color: $color6;
+    background-color: $color7;
     color: $color5;
     &__iconos{
         display: flex;

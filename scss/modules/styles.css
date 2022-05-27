@@ -199,22 +199,26 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .malibu {
     background-image: url("../../img/FondoSobreMalibuMobile.png");
-    display: -ms-grid;
-    display: grid;
-    height: 600px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 550px;
+    /* grid-template-columns: 1fr; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 50px;
+    padding: 30px;
   }
   .malibu-imagen__img {
     width: 0px;
   }
   .malibu-texto {
-    margin: 10%;
-    height: 500px;
+    margin-top: 25%;
+    height: auto;
   }
 }
 
@@ -235,7 +239,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 5%;
 }
 
@@ -268,7 +272,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 350px;
-  max-height: 500px;
+  min-height: 470px;
   margin: 3% 5%;
   border-radius: 5px;
 }
@@ -276,7 +280,27 @@
 .productos-card__img {
   /* max-height: 273px; */
   min-height: 200px;
+  max-height: 250px;
   max-width: 230px;
+  overflow: hidden;
+}
+
+.productos-card__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 200px;
+  max-height: 200px;
+  margin: 0 auto;
 }
 
 .productos-card__btn {
@@ -338,7 +362,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: #C3E0DC;
+  background-color: #FFD7CE;
   color: #043543;
 }
 
@@ -416,7 +440,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 10%;
 }
 
@@ -561,9 +585,7 @@
 }
 
 .containerProductos-img {
-  max-height: 364px;
-  min-width: 363px;
-  width: 200px;
+  width: 25%;
 }
 
 .containerProductos-texto {
@@ -571,7 +593,11 @@
   height: 265px;
   background-color: #ffd7ce;
   border-radius: 10px;
-  padding: 30px;
+  padding: 60px;
+}
+
+.containerProductos-texto h2 {
+  font-size: 40px;
 }
 
 .containerProductos-boton {
@@ -626,6 +652,9 @@
     border-radius: 0;
     padding: 30px;
   }
+  .containerProductos-texto h2 {
+    font-size: 30px;
+  }
   .containerProductos-boton {
     width: 130px;
     height: 43px;
@@ -659,7 +688,7 @@
 }
 
 .banner-contacto {
-  background-image: url("../../img/pagina-malibu/Group 271.png");
+  background-image: url("../../img/pagina-contacto/Group 335.png");
   background-color: #f4f8fbc2;
 }
 
@@ -693,8 +722,8 @@
 }
 
 .contacto__parte1__img-redes {
-  width: 35%;
-  height: 35%;
+  width: 80%;
+  height: 80%;
 }
 
 .contacto__parte2 {
@@ -729,10 +758,11 @@
   }
   .contacto__parte1__img {
     width: 100%;
+    height: 100%;
   }
   .contacto__parte1__img-redes {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     margin: 0px 20px;
   }
   .contacto__parte2 {
@@ -747,14 +777,14 @@
     font-size: 15px;
   }
   .contacto-redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 10px 20px;
   }
 }
 
 .banner-malibu {
-  background-image: url("../../img/pagina-malibu/Group 271.png");
+  background-image: url("../../img/pagina-malibu/Group 334.png");
   background-color: #f4f8fbc2;
 }
 
@@ -782,20 +812,18 @@
 
 .pasteleria__parte1__img {
   width: 65%;
-  height: 65%;
   border-radius: 20px;
   margin: 5%;
 }
 
 .pasteleria__parte1__img-mara {
-  width: 35%;
-  height: 35%;
+  max-width: 45%;
 }
 
 .pasteleria__parte2 {
-  padding: 17% 20%;
+  padding: 5% 10%;
   color: #043543;
-  margin: 15% 0px;
+  margin: 10% 0px;
 }
 
 .pasteleria__parte2 h2 {
@@ -826,9 +854,8 @@
     width: 80%;
   }
   .pasteleria__parte1__img-mara {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
+    min-width: 300px;
+    margin-bottom: 10%;
   }
   .pasteleria__parte2 {
     display: -ms-grid;
@@ -842,11 +869,6 @@
   }
   .pasteleria__parte2 p {
     font-size: 15px;
-  }
-  .pasteleria-mara {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -931,7 +953,7 @@
   background-size: contain;
 }
 
-.containerProductos {
+.containerProductosCat {
   display: -ms-grid;
   display: grid;
   height: 100%;
@@ -942,21 +964,31 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.containerProductos__card {
+.containerProductosCat__card {
   width: 356px;
   height: 538px;
   background-color: #FFD7CE;
   margin: auto;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.containerProductos__card--img {
+.containerProductosCat__card--img {
   margin: -30px auto;
   max-height: 455px;
   overflow: hidden;
 }
 
-.containerProductos__card--txt {
+.containerProductosCat__card--txt {
   overflow: hidden;
   min-height: 100px;
   text-align: center;
@@ -964,11 +996,11 @@
   padding: 10px;
 }
 
-.containerProductos__card--txt h1 {
+.containerProductosCat__card--txt h1 {
   font-size: 25px;
 }
 
-.containerProductos__card--txt p {
+.containerProductosCat__card--txt p {
   font-family: 'Roboto Slab', serif;
   font-weight: 600;
   font-size: 14px;
@@ -978,5 +1010,22 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+body p {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* text-align: center; */
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  body p {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@ $color2: #043543;
 
 
 .banner-malibu{
-    background-image: url('../../img/pagina-malibu/Group\ 271.png');
+    background-image: url('../../img/pagina-malibu/Group\ 334.png');
     background-color: $color1;
 }
 
@@ -12,6 +12,7 @@ $color2: #043543;
     display: grid;
     grid-template-rows: 1fr ;
     grid-template-columns: 1fr 1fr;
+    
     &__parte1{
         display: flex;
         justify-content: center;
@@ -19,18 +20,17 @@ $color2: #043543;
     }
     &__parte1__img{
         width: 65%;
-        height: 65%;
         border-radius: 20px;
         margin: 5%;
         &-mara{
-            width: 35%;
-            height: 35%;
+            max-width: 45%;
         }
     }
     &__parte2{
-        padding: 17% 20%;
+        
+        padding: 5% 10%;
         color: $color2;
-        margin: 15% 0px;
+        margin: 10% 0px;
         
         h2{
             font-size: 72px;
@@ -55,13 +55,14 @@ $color2: #043543;
         display: block;
         &__parte1{
             display: flex;
+            
         }
         &__parte1__img{
-            width: 80%;
+            width:80%;
+
             &-mara{
-                width: 200px;
-                height: 200px;
-                padding: 15px;
+                min-width: 300px;
+                margin-bottom: 10%;
             }
         }
         &__parte2{
@@ -75,9 +76,6 @@ $color2: #043543;
             p{
                 font-size: 15px;
             }
-        }
-        &-mara{
-            display: flex;
         }
     }
 

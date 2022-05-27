@@ -42,11 +42,12 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .malibu{
         background-image: url('../../img/FondoSobreMalibuMobile.png');
-        display: grid;
-        height: 600px;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        /* grid-template-columns: 1fr; */
         align-items:center;
-        padding: 50px;
+        padding: 30px;
 
 
         // grid-template-columns: 1fr;
@@ -54,8 +55,9 @@
                 width: 0px;
         }
         &-texto{
-            margin: 10%;
-            height: 500px;
+
+            margin-top: 25%;
+            height: auto;
         }
     }
 }

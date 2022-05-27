@@ -9,7 +9,7 @@ $colorFondoCard: #FFD7CE;
     background-size: contain;
 }
 
-.containerProductos{
+.containerProductosCat{
     display: grid;
     height: 100%;
     margin: 5% auto;
@@ -24,6 +24,9 @@ $colorFondoCard: #FFD7CE;
         background-color: $colorFondoCard;
         margin: auto;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &--img{
             margin: -30px auto;
             max-height: 455px;

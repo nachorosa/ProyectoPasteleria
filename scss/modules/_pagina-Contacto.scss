@@ -2,7 +2,7 @@ $color1: #f4f8fbc2;
 $color2: #043543;
 
 .banner-contacto{
-    background-image: url('../../img/pagina-malibu/Group\ 271.png');
+    background-image: url('../../img/pagina-contacto/Group\ 335.png');
     background-color: $color1;
 }
 
@@ -23,8 +23,8 @@ $color2: #043543;
         border-radius: 20px;
         margin: 5%;
         &-redes{
-            width: 35%;
-            height: 35%;
+            width: 80%;
+            height: 80%;
         }
     }
     &__parte2{
@@ -58,9 +58,10 @@ $color2: #043543;
         }
         &__parte1__img{
             width: 100%;
+            height: 100%;
             &-redes{
-                width: 100px;
-                height: 100px;
+                width: 100%;
+                height: 100%;
                 margin: 0px 20px;
                 
             }
@@ -78,7 +79,9 @@ $color2: #043543;
         }
 
         &-redes{
-            display: flex;
+            width: 80%;
+            height: 80%;
+            margin: 10px 20px;
         }
     }
 
