@@ -1,3 +1,5 @@
+$color6: #FF8091;
+
 .bannerProductos {
     background-image: url("../../img/Group\ 128.png");
     background-repeat: no-repeat;
@@ -82,6 +84,9 @@
         background-color: #F4F8FB;
         border: none;
         border-radius: 10px;
+        &:hover{
+            color: $color6 !important;
+            }
     }
 }
 

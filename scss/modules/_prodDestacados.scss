@@ -1,5 +1,6 @@
 $color1: #FFD7CE;
 $color2: #043543;
+$color6: #FF8091;
 
 .seccion-productos{
     background-image: url('../../img/Vector\ 34\ \(Stroke\)\ \(1\).png');
@@ -60,6 +61,9 @@ $color2: #043543;
             height: 43px;
             border: none;
             border-radius: 6px;
+            &:hover{
+                color: $color6 !important;
+                }
         }
 
         & h3{

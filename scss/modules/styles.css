@@ -1,15 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%22"); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Bebas Neue', cursive;
-  /*     font-weight: bolder; */
-  color: #043543;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Handlee&family=Lobster&family=Lobster+Two&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%22"); */
 .banner {
   background-image: url("../../img/Group 128.png");
   background-repeat: no-repeat;
@@ -147,7 +138,7 @@
 }
 
 .navbar__boton--home--ruta:hover {
-  color: #00109b !important;
+  color: #FF8091 !important;
 }
 
 .malibu {
@@ -312,6 +303,10 @@
   border-radius: 6px;
 }
 
+.productos-card__btn:hover {
+  color: #FF8091 !important;
+}
+
 .productos-card h3 {
   text-align: center;
 }
@@ -350,7 +345,6 @@
   }
 }
 
-/* FOOTER */
 .footer {
   height: 250px !important;
   display: -webkit-box;
@@ -606,6 +600,10 @@
   background-color: #F4F8FB;
   border: none;
   border-radius: 10px;
+}
+
+.containerProductos-boton:hover {
+  color: #FF8091 !important;
 }
 
 @media (max-width: 1080px) {
@@ -930,7 +928,7 @@
 }
 
 .navbarProductos__boton--home--ruta:hover {
-  color: #00109b !important;
+  color: #FF8091 !important;
 }
 
 @media (max-width: 1080px) {
@@ -1006,10 +1004,24 @@
   font-size: 14px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  color: #043543;
+}
+
 body {
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+body h1 {
+  font-family: 'Lobster Two', cursive;
+  font-weight: bolder;
 }
 
 body p {

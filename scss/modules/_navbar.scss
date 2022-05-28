@@ -1,6 +1,7 @@
 $color3: #FDCA7D;
 $color4: #FDEEEA;
 $color5: #043543;
+$color6: #FF8091;
 
 .navbar{
     font-family: 'Bebas Neue';
@@ -29,7 +30,7 @@ $color5: #043543;
                 &--ruta{
                     color: $color5 !important;
                     &:hover{
-                        color: rgb(0, 16, 155) !important;
+                        color: $color6 !important;
                         }
                 }
                 }

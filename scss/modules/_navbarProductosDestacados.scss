@@ -1,6 +1,7 @@
 $color3: #FDCA7D;
 $color4: #fdeeea;
 $color5: rgba(4, 53, 67, 0.7);;
+$color6: #FF8091;
 
 .containerNav{
 display: flex;
@@ -35,7 +36,7 @@ justify-content: center;
                 &--ruta{
                     color: $color5 !important;
                     &:hover{
-                        color: rgb(0, 16, 155) !important;
+                        color: $color6 !important;
                         }
                 }
                 }
