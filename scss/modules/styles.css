@@ -582,6 +582,13 @@
   width: 25%;
 }
 
+.containerProductos-img:hover {
+  -webkit-transform: scale(1.15) translateY(-10px);
+          transform: scale(1.15) translateY(-10px);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
 .containerProductos-texto {
   width: 500px;
   height: 265px;
@@ -983,6 +990,7 @@
 .containerProductosCat__card--img {
   margin: -30px auto;
   max-height: 455px;
+  width: 100%;
   overflow: hidden;
 }
 

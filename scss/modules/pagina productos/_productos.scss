@@ -64,8 +64,13 @@ $color6: #FF8091;
 
     &-img {
         width: 25%;
-        
     }
+
+    &-img:hover{
+        transform: scale(1.15) translateY(-10px);
+        transition: all .5s ease-in-out;
+    }
+    
 
     &-texto {
         width: 500px;
