@@ -25,6 +25,7 @@ $colorFondoCard: #FFD7CE;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-radius: 15px;
         &--img{
             margin: -30px auto;
             max-height: 455px;
@@ -46,6 +47,41 @@ $colorFondoCard: #FFD7CE;
                 font-weight: 600;
                 font-size: 14px;
                 
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .containerProductosCat{
+        display: grid;
+        height: 100%;
+        margin: 5% auto;
+        margin-top: 15%;
+        padding: 0px;
+        grid-template-columns: repeat(auto-fit,
+                minmax(150px, 0.5fr));
+        gap: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        &__card{
+            width: 178px;
+            height: 400px;
+            background-color: $colorFondoCard;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &--img{
+                margin: auto;
+                max-height: 250px;
+                min-height: 210px;
+                width: 100%;
+            }
+            &--txt{
+                overflow: hidden;
+                min-height: 160px;
             }
         }
     }

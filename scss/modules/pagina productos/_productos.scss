@@ -109,6 +109,7 @@ $color6: #FF8091;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+        margin: auto 3%;
         margin-bottom: 10%;
     }
 
@@ -119,6 +120,7 @@ $color6: #FF8091;
         width: auto;
         margin: 10% 0;
         background-color: #fdeeea;
+        border-radius: 10px;
 
         &-img {
             max-height: 142px;
@@ -131,7 +133,7 @@ $color6: #FF8091;
             background-color: #ffd7ce;
             border-radius: 0;
             padding: 30px;
-
+            border-radius: 10px;
             & h2{
                 font-size: 30px;
             }

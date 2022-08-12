@@ -6,7 +6,6 @@ $color7: #FFD7CE;
 
 .footer{
     height: 250px !important;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,6 +19,9 @@ $color7: #FFD7CE;
         justify-content: space-around;
         align-items: center;
     }
+    &__logo2{
+        display: none;
+    }
 }
 
 .iconoFooter{
@@ -30,10 +32,16 @@ $color7: #FFD7CE;
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .footer{
+        margin-top: 15%;
         &__logo{
-            width: 200px;
+            display: none;
+        }
+        &__logo2{
+            display: initial;
+            margin-bottom: 30%;
         }
         &__iconos{
+            margin-bottom: 15%;
             & h2{
                 font-size: 20px;
             }

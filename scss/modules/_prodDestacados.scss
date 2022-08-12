@@ -23,9 +23,10 @@ $color6: #FF8091;
             padding-top:2% ;
         }
     }
-    & h3{
-        margin: 30px 0;
-    }
+        & h3{
+            text-align: left;
+            margin: 30px 0;
+        }
     &-card{
         display: flex;
         align-items:center ;
@@ -81,20 +82,34 @@ $color6: #FF8091;
 
     .productos{
         display: block;
+        text-align: left;
         &-leyenda{
             & p{
                 padding: 0 15%;
             }
-    
+            & h3{
+                text-align: left;
+            }
+        }
+        div{
+            & h3{
+                text-align: left;
+                margin: 30px 0;
+            }
         }
         &-card{
             flex-direction:row;
             max-width: 90%;
             min-height: 80%;
             padding: 2%;
+            div {
+                margin: auto;
+                min-width: 150px;
+            }
             &__img{
                 min-height: 120px;
                 max-width: 110px;
+                min-width: 110px;
                 margin-right: 20px;
             }
             &__btn{

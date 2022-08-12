@@ -1,5 +1,5 @@
 $color3: #FDCA7D;
-$color4: #fdeeea;
+$color4: #f8f8f8;
 $color5: rgba(4, 53, 67, 0.7);;
 $color6: #FF8091;
 
@@ -33,6 +33,9 @@ justify-content: center;
                 padding: 3px;
                 border-radius: 15px;
                 justify-content: left;
+                & a{
+                    font-size: 40px !important;
+                }
                 &--ruta{
                     color: $color5 !important;
                     &:hover{
@@ -44,13 +47,16 @@ justify-content: center;
     }
 
     @media (max-width: 1080px) {
-
         .navbarProductos{
-
             width: 100%;
             &__boton{
-                flex-direction: row;
+                flex-direction: column !important;
                 font-size: 13px;
+                &--home{
+                    & a{
+                        font-size: 25px !important;
+                    }
+                }
             }
     }
 }
